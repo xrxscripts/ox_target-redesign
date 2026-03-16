@@ -4,6 +4,18 @@ const optionsWrapper = document.getElementById("options-wrapper");
 const body = document.body;
 const eye = document.getElementById("eyeSvg");
 
+window.addEventListener("mousedown", (event) => {
+  if (event.button !== 0) return;
+  eye.classList.remove("fa-regular", "fa-hand");
+  eye.classList.add("fa-regular", "fa-hand-back-fist");
+});
+
+window.addEventListener("mouseup", (event) => {
+  if (event.button !== 0) return;
+  eye.classList.remove("fa-regular", "fa-hand-back-fist");
+  eye.classList.add("fa-regular", "fa-hand");
+});
+
 window.addEventListener("message", (event) => {
   optionsWrapper.innerHTML = "";
 
