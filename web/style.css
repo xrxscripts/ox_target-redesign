@@ -27,12 +27,13 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 22pt;
-  fill: black;
+  font-size: 28pt;
+  color: black;
 }
 
 .eye-hover {
   fill: var(--color-default);
+  color: var(--color-default);
 }
 
 #options-wrapper {
